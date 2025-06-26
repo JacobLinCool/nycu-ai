@@ -6,7 +6,7 @@ const ai = new GoogleGenAI({ apiKey: env.GEMINI_API_KEY });
 const translationCache = new Map<string, Promise<Record<string, string>>>();
 
 export const load = async ({ params }) => {
-	const lang = params.lang;
+	const lang = params.lang.slice(0, 10);
 
 	const en = {
 		disclaimer:

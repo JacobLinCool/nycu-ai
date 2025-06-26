@@ -55,7 +55,7 @@
 					{data.anyIdeas}
 				</p>
 				<p>
-					{data.reachOut}:
+					{data.reachOut}
 					<a
 						href="mailto:{myAddress}"
 						class="text-secondary-400 hover:text-secondary-300 mt-2 inline-block transition-colors"
